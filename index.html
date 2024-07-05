@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Form</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-//<script
-//src='//in.fw-cdn.com/31606983/807337.js'
-//chat='false'>
-//</script>
+<script
+src='//in.fw-cdn.com/31606983/807337.js'
+chat='false'>
+</script>
 <style>
     /* Basic styling for demonstration purposes */
     body {
@@ -55,7 +55,7 @@
     <input type="email" id="email" placeholder="Your email.." required>
 
     <label for="companyName">Company Name</label>
-    <textarea id="company_name" name="companyName" placeholder="Write something.." required></textarea>
+    <input type="text" id="company_name" placeholder="Your Comapny name" required>
 
     <input type="submit" onclick="identify()">
     </form>
@@ -70,7 +70,6 @@
             };
             var identifier = document.getElementById("email").value; // Using email as identifier
             fwcrm.identify(identifier, new_contact);
-            // You might need to handle the submission of the form here, e.g., redirecting to another page or displaying a success message
         }
     </script>
 
