@@ -59,7 +59,11 @@ chat='false'>
 
     <input type="submit" onclick="identify()">
     </form>
- <script>
+
+<script
+src='//au.fw-cdn.com/20836614/279772.js'
+chat='true'>
+
         function identify() {
             var new_contact = {
                 "First name": document.getElementById("name").value,
@@ -71,6 +75,7 @@ chat='false'>
             var identifier = document.getElementById("email").value; // Using email as identifier
             fwcrm.identify(identifier, new_contact);
         }
+
     </script>
 
 
