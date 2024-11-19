@@ -62,21 +62,21 @@ chat='false'>
     <input type="submit" onclick="identify()">
     </form>
 
-<script>
+//<script>
 
-        function identify() {
-            var new_contact = {
-                "First name": document.getElementById("name").value,
-                "Email": document.getElementById("email").value,
-                "company": {
-                    "Name": document.getElementById("company_name").value
-                }
-            };
-            var identifier = document.getElementById("email").value; // Using email as identifier
-            fwcrm.identify(identifier, new_contact);
-        }
+       // function identify() {
+           // var new_contact = {
+               // "First name": document.getElementById("name").value,
+                //"Email": document.getElementById("email").value,
+                //"company": {
+                  //  "Name": document.getElementById("company_name").value
+             //   }
+            //};
+            //var identifier = document.getElementById("email").value; // Using email as identifier
+            //fwcrm.identify(identifier, new_contact);
+        //}
 
-    </script>
+    //</script>
 
 
 </body>
